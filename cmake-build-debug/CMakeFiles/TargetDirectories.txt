@@ -1,0 +1,3 @@
+C:/dev/C++/StuffThing/cmake-build-debug/CMakeFiles/StuffThing.dir
+C:/dev/C++/StuffThing/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/dev/C++/StuffThing/cmake-build-debug/CMakeFiles/rebuild_cache.dir
