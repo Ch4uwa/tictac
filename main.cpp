@@ -1,10 +1,10 @@
 /*
  * Martin Karlsson 2019-03-10
  */
-#include <iostream>
-
+#include "game.hpp"
+#include "Defines.hpp"
 
 int main()
 {
-    return EXIT_SUCCESS;
+    Chauwa::Game(SCREEN_WIDTH, SCREEN_HEIGHT, "Tic-Tac-Toe");
 }

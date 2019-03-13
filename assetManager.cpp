@@ -7,7 +7,6 @@
 namespace Chauwa
 {
 
-
     void AssetManager::loadTexture(std::string name, std::string fileName)
     {
         sf::Texture tex;

@@ -13,10 +13,8 @@ namespace Chauwa
     class AssetManager
     {
     public:
-        AssetManager()
-        {}
-        ~AssetManager()
-        {}
+        AssetManager() = default;
+        ~AssetManager() = default;
 
         void loadTexture(std::string name, std::string fileName);
         sf::Texture &getTexture(std::string name);

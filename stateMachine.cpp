@@ -7,14 +7,10 @@
 namespace Chauwa
 {
     StateMachine::StateMachine()
-    {
-
-    }
+    = default;
     StateMachine::~StateMachine()
-    {
-
-    }
-    void StateMachine::addState(Chauwa::stateRef newState, bool isReplacing)
+    = default;
+    void StateMachine::addState(stateRef newState, bool isReplacing)
     {
         this->_isAdding = true;
         this->_isReplacing = isReplacing;

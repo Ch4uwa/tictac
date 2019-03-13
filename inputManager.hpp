@@ -13,8 +13,9 @@ namespace Chauwa
     class InputManager
     {
     public:
-        InputManager(){}
-        ~InputManager(){}
+        InputManager() = default;
+        ~InputManager()
+        {}
 
         bool isSpriteClicked(sf::Sprite object, sf::Mouse::Button button,
                 sf::RenderWindow& window);
