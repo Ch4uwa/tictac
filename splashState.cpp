@@ -7,14 +7,15 @@
 #include "splashState.hpp"
 
 #include "Defines.hpp"
+#include "mainMenuState.hpp"
 
 namespace Chauwa
 {
 
-    SplashState::SplashState(GameDataRef data)
-            : _data(std::move(data))
+    SplashState::SplashState(GameDataRef &data)
+            : _data(data)
     {
-
+        LOG("SplashState ctor");
     }
     void SplashState::init()
     {
@@ -38,13 +39,17 @@ namespace Chauwa
     {
         if (this->_clock.getElapsedTime().asSeconds() > SPLASH_STATE_SHOW_TIME)
         {
-            std::cout << "Go to Main Menu\n";
+            this->_data->machine.addState(stateRef(new MainMenuState(_data)), true);
         }
     }
     void SplashState::draw(float dt)
     {
-        this->_data->window.clear(sf::Color::Red);
+        this->_data->window.clear();
         this->_data->window.draw(this->_background);
         this->_data->window.display();
+    }
+    SplashState::~SplashState()
+    {
+        LOG("SplashState dtor");
     }
 }

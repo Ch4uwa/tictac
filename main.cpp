@@ -6,5 +6,6 @@
 
 int main()
 {
+    LOG("Program is running!");
     Chauwa::Game(SCREEN_WIDTH, SCREEN_HEIGHT, "Tic-Tac-Toe");
 }

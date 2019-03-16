@@ -6,10 +6,6 @@
 
 namespace Chauwa
 {
-    StateMachine::StateMachine()
-    = default;
-    StateMachine::~StateMachine()
-    = default;
     void StateMachine::addState(stateRef newState, bool isReplacing)
     {
         this->_isAdding = true;
@@ -49,8 +45,16 @@ namespace Chauwa
             this->_isAdding = false;
         }
     }
-    stateRef &Chauwa::StateMachine::getActiveState()
+    stateRef &StateMachine::getActiveState()
     {
         return _states.top();
+    }
+    StateMachine::StateMachine()
+    {
+        LOG("StateMachine ctor");
+    }
+    StateMachine::~StateMachine()
+    {
+        LOG("StateMachine dtor");
     }
 }

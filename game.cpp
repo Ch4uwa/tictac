@@ -9,6 +9,7 @@ namespace Chauwa
 {
     Game::Game(unsigned int width, unsigned int height, std::string title)
     {
+        LOG("Game ctor");
         _data->window.create(sf::VideoMode(width, height),
                              title, sf::Style::Close | sf::Style::Titlebar);
         _data->machine.addState(stateRef(new SplashState(this->_data)));
@@ -49,6 +50,10 @@ namespace Chauwa
             interpolation = accumulator / dt;
             this->_data->machine.getActiveState()->draw(interpolation);
         }
+    }
+    Game::~Game()
+    {
+        LOG("Game dtor");
     }
 
 }

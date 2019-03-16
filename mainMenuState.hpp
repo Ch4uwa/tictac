@@ -15,6 +15,7 @@ namespace Chauwa
     {
     public:
         explicit MainMenuState(GameDataRef& data);
+        ~MainMenuState() override;
 
         void init() override;
 

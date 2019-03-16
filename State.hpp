@@ -5,11 +5,18 @@
 #ifndef STUFFTHING_STATE_HPP
 #define STUFFTHING_STATE_HPP
 
+#include "Defines.hpp"
+
 namespace Chauwa
 {
     class State
     {
     public:
+        State()
+        { LOG("State ctor"); }
+        virtual ~State()
+        { LOG("State dtor"); }
+
         virtual void init() = 0;
 
         virtual void handleInput() = 0;

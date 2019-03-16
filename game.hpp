@@ -28,7 +28,7 @@ namespace Chauwa
     {
     public:
         Game(unsigned int width, unsigned int height, std::string title);
-        ~Game() = default;
+        ~Game();
 
     private:
         const float dt = 1.0f / 60.0f;

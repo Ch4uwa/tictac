@@ -5,6 +5,7 @@
 #include <sstream>
 #include "Defines.hpp"
 #include "mainMenuState.hpp"
+#include "gameState.hpp"
 
 #include <iostream>
 
@@ -36,7 +37,7 @@ namespace Chauwa
 
         this->_title.setPosition(sf::Vector2f(
                 SCREEN_WIDTH / 2.f - (this->_title.getGlobalBounds().width / 2),
-                SCREEN_HEIGHT / 2.f - (this->_title.getGlobalBounds().height * 0.1f)));
+                (this->_title.getGlobalBounds().height * 0.1f)));
     }
     void MainMenuState::handleInput()
     {
@@ -44,7 +45,16 @@ namespace Chauwa
 
         while (this->_data->window.pollEvent(event))
         {
-            
+            if (sf::Event::Closed == event.type)
+            {
+                this->_data->window.close();
+            }
+
+            if (this->_data->input.isSpriteClicked(this->_playButton,
+                    sf::Mouse::Left, this->_data->window))
+            {
+                this->_data->machine.addState(stateRef(new GameState(_data)), true);
+            }
         }
     }
     void MainMenuState::update(float dt)
@@ -53,6 +63,18 @@ namespace Chauwa
     }
     void MainMenuState::draw(float dt)
     {
+        this->_data->window.clear();
+
+        this->_data->window.draw(this->_background);
+        this->_data->window.draw(this->_playButton);
+        this->_data->window.draw(this->_playButtonOuter);
+        this->_data->window.draw(this->_title);
+
+        this->_data->window.display();
+    }
+    MainMenuState::~MainMenuState()
+    {
+        LOG("mainMenuState dtor");
 
     }
 }

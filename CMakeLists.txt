@@ -17,7 +17,12 @@ add_executable(
         inputManager.cpp inputManager.hpp
         Defines.hpp
         game.cpp game.hpp
-        splashState.cpp splashState.hpp mainMenuState.cpp mainMenuState.hpp)
+        splashState.cpp splashState.hpp
+        mainMenuState.cpp mainMenuState.hpp
+        gameState.cpp gameState.hpp
+        pauseState.cpp pauseState.hpp
+        gameOverState.cpp gameOverState.hpp
+        AI.cpp AI.hpp)
 
 
 target_link_libraries(StuffThing sfml-graphics sfml-window)

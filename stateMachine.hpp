@@ -18,7 +18,7 @@ namespace Chauwa
     {
     public:
         StateMachine();
-        virtual ~StateMachine();
+        ~StateMachine();
 
         void addState(stateRef newState, bool isReplacing = true);
         void removeState();

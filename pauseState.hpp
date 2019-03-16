@@ -1,9 +1,9 @@
-/*
- * Created by MartinK on 2019-03-11.
- */
+//
+// Created by martin on 2019-03-14.
+//
 
-#ifndef STUFFTHING_SPLASHSTATE_HPP
-#define STUFFTHING_SPLASHSTATE_HPP
+#ifndef STUFFTHING_PAUSESTATE_HPP
+#define STUFFTHING_PAUSESTATE_HPP
 
 #include <SFML/Graphics.hpp>
 #include "State.hpp"
@@ -11,13 +11,14 @@
 
 namespace Chauwa
 {
-    class SplashState : public State
+    class PauseState : public State
     {
     public:
-        explicit SplashState(GameDataRef &data);
-        ~SplashState() override;
+        explicit PauseState(GameDataRef &data);
+        ~PauseState() override;
 
         void init() override;
+
         void handleInput() override;
         void update(float dt) override;
         void draw(float dt) override;
@@ -25,10 +26,10 @@ namespace Chauwa
     private:
         GameDataRef _data;
 
-        sf::Clock _clock;
-
         sf::Sprite _background;
+        sf::Sprite _resumeButton;
+        sf::Sprite _homeButton;
     };
 }
 
-#endif //STUFFTHING_SPLASHSTATE_HPP
+#endif //STUFFTHING_PAUSESTATE_HPP
