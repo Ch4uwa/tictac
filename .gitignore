@@ -1,3 +1,7 @@
+*.log
+build/
+temp-*
+
 CMakeCache.txt
 CMakeFiles
 CMakeScripts
