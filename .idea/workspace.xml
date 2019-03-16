@@ -11,32 +11,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee2d1f69-48d4-4242-968f-c4875e840aeb" name="Default Changelist" comment="Init">
-      <change afterPath="$PROJECT_DIR$/AI.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AI.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gameOverState.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gameOverState.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gameState.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gameState.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pauseState.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pauseState.hpp" afterDir="false" />
+    <list default="true" id="ee2d1f69-48d4-4242-968f-c4875e840aeb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Defines.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Defines.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/State.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/State.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/assetManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assetManager.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/assetManager.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/game.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/game.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inputManager.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/inputManager.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainMenuState.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/mainMenuState.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainMenuState.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/mainMenuState.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/splashState.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/splashState.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/splashState.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/splashState.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stateMachine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/stateMachine.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stateMachine.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/stateMachine.hpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,7 +38,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -222,7 +198,8 @@
       <workItem from="1552643718459" duration="1743000" />
       <workItem from="1552645845714" duration="19319000" />
       <workItem from="1552673337674" duration="941000" />
-      <workItem from="1552728870766" duration="3271000" />
+      <workItem from="1552728870766" duration="3517000" />
+      <workItem from="1552738220752" duration="16000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1552257078568</created>
@@ -238,11 +215,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552496580122</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="basic done">
+      <created>1552734160893</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552734160893</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112484000" />
+    <option name="totallyTimeSpent" value="112746000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -256,12 +240,12 @@
   <component name="ToolWindowManager">
     <frame x="0" y="32" width="3840" height="2128" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49913645" visible="true" weight="0.12273695" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49913645" weight="0.12273695" />
       <window_info id="Structure" order="1" sideWeight="0.50086355" side_tool="true" weight="0.18905473" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2536193" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32815012" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.33565682" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -270,7 +254,7 @@
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.4998091" weight="0.31903484" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32868633" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5001909" side_tool="true" weight="0.32831" />
-      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.4998091" weight="0.31485468" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.4998091" weight="0.3147453" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.32707775" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.46648794" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -323,8 +307,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init" />
+    <MESSAGE value="basic done" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic done" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
